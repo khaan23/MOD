@@ -1,0 +1,22 @@
+import math
+
+var1 = float(input('vvedite a = '))
+var2 = float(input('vvedite b = '))
+var3 = float(input('vvedite c = '))
+discrim = math.pow(var2,2) - 4*var1*var3
+
+if discrim > 0:
+    x1 = (-var2 + math.sqrt(discrim))/(2*var1)
+    x2 = (-var2 - math.sqrt(discrim))/(2*var1)
+    print(x1,x2)
+
+elif discrim == 0:
+    x = -var3/var2
+    print(x)
+
+else:
+    # a = math.sqrt(discrim)
+    # x1 = complex(-var2/2, a/2)
+    # x2 = complex(-var2/2, a/2)
+    # print(x1,x2)
+    print('chto-to')
